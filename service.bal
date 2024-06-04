@@ -11,7 +11,7 @@ map<CreditCardInfo> creditCardStore = {};
 
 # A service to represent a simple credit card adding and listing service.
 # bound to port `9090`.
-service /api/v1/card\-service on new http:Listener(9089) {
+service /card\-service on new http:Listener(9089) {
 
     # A resource function to list existing credit cards.
     # + return - Returns a list of credit card information.
